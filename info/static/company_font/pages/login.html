@@ -1,0 +1,287 @@
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Meghna One page parallax responsive HTML Template ">
+
+    <meta name="author" content="Muhammad Morshed">
+
+    <title>深汕特别合作区蓬勃传媒有限公司 </title>
+
+    <!-- Mobile Specific Meta
+                        ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- CSS
+                ================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <!-- Grid Component css -->
+    <link rel="stylesheet" href="../css/component.css">
+    <!-- Slit Slider css -->
+    <link rel="stylesheet" href="../css/slit-slider.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <!--
+                Google Font
+                =========================== -->
+
+    <!-- Oswald / Title Font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- Ubuntu / Body Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizer Script for old Browsers -->
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        #passwordModal input{
+            color: #000;
+            margin-left: 10px;
+        }
+        @media screen and (max-width: 768px){
+            .loginform{
+                padding: 30px;
+                box-sizing: border-box;
+            }
+            .loginform button{
+                margin-left: 30px;
+            }
+        }
+         @media screen and (max-width: 768px){
+             #imagecode{
+                 width: 108px;
+             }
+             #codeCanvas{
+                 left:120px;
+             }
+             .get_pic_code{
+                 margin-left: 30px;
+             }
+         }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body id="body">
+    <!--
+                Start Preloader
+                ==================================== -->
+    <div id="loading-mask">
+        <div class="loading-img">
+            <img alt="Meghna Preloader" src="../img/preloader.gif" />
+        </div>
+    </div>
+    <!--
+                    End Preloader
+                    ==================================== -->
+
+    <!--
+                    Welcome Slider
+                    ==================================== -->
+    <!-- Start  Header
+                          ============================== -->
+    <header id="navigation" class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                <a class="navbar-brand" href="#body">
+                    <h1 id="logo">
+                        <img src="../img/logo2.png" alt="Meghna" height="40px" />
+                    </h1>
+                </a>
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="Navigation">
+                <ul id="nav" class="nav navbar-nav">
+                    <li><a href="/">网站首页</a></li>
+                    <li><a href="/#about">关于我们</a></li>
+                    <li><a href="/#services">服务与支持</a></li>
+                    <li><a href="/#contact-us">联系我们</a></li>
+                    <li class="current"><a href="javascript:void(0);">代理申请</a></li>
+                    <li><a href="./select.html">申请进度查询</a></li>
+                </ul>
+            </nav>
+            <!-- /main nav -->
+
+        </div>
+    </header>
+    <!-- End  Header
+                          ============================== -->
+
+    <!-- Start  main
+                        ============================== -->
+    <main>
+        <form name="login" class="loginform">
+            <div class="form-group">
+                <label for="">账 号：</label> <input type="text" class="form-control" id="username" placeholder="请输入用户名/手机号" name="username">
+            </div>
+            <div class="form-group">
+                <label for="">密 码：</label> <input type="password" class="form-control" id="password" placeholder="请输入密码" name="password">
+            </div>
+            <button type="button" class="btn btn-success" id="login">登录</button>
+            <button type="reset" class="btn btn-info btn-myModal" data-toggle="modal" data-target="#myModal">注册</button>
+            <a href="javascript:void(0);" style="margin-left: 20px; margin-top: 20px; position:relative; top: 20px;" data-toggle="modal" data-target="#passwordModal">忘记密码？</a>
+        </form>
+
+    </main>
+    <!-- End  main
+                        ============================== -->
+
+
+     <!-- Start  modal 
+                =========================== -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">注册用户</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form name="" id="myModalreset">
+                                    <div class="form-group">
+                                        <label for="userName">用户账号：</label>
+                                        <input type="text" class="form-control" id="userName" placeholder="请输入用户账号" name="userName">
+                                        <p>请输入用户账号</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password1">用户密码：</label>
+                                        <input type="password" class="form-control" id="password1" placeholder="请输入用户密码" name="password">
+                                        <p>请输入用户密码</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password2">确认密码：</label>
+                                        <input type="password" class="form-control" id="password2" placeholder="请再次输入用户密码" name="password2">
+                                        <p>请再次输入用户密码</p>
+                                    </div>
+                                    <div class="form_group validatePosition">
+                                        <input type="text" name="code_pwd" id="imagecode" class="code_pwd" placeholder="请输入图形验证码，区分大小写">
+                                        <canvas id="codeCanvas"></canvas>
+                                        <div id="register-image-code-err" class="error_tip">图形码不能为空</div>
+                                        <a href="javascript:void(0);" class="get_pic_code">看不清？更换验证码</a>
+                                    </div>
+                                    <div class="form-group validatePosition">
+                                        <label for="phoneNumber">手机号码：</label>
+                                        <input type="text" class="form-control" id="phoneNumber" placeholder="请输入用户手机号码" name="phoneNumber">
+                                        <p>请输入用户手机号码</p>
+                                        <button type="button" class="btn-danger validate">获取验证码</button>
+                                    </div>
+                                    <div class="form-group" style="margin-top:20px;">
+                                        <label for="code">短信验证码:</label>
+                                        <input type="text" class="form-control" id="code" placeholder="请输入收到的验证码" name="code">
+                                    </div>
+                                </form>
+            
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary register">注册</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                <!-- End   model
+                            =========================== -->
+<!--    Start modal retrievePassword
+                         ===================-->
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="passwordModal" style="margin: 100px auto; height: 600px;">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="padding: 40px;">
+                    <form>
+                        <div class="form-group" style="padding-left: 150px;">
+                            <label for="" style="color: #000;">手 机 号 码 : </label>
+                            <input type="text" placeholder="请输入手机号码" id="passwordModalNumber" style="margin-left: 23px;">
+                            <button type="button" style="background-color: red;color:#fff; left:490px; top:35px;" class="validate">获取验证码</button>
+                        </div>
+                        <div class="form-group" style="padding-left: 150px;">
+                            <label for="" style="color: #000;">短 信 验 证 码:</label>
+                            <input type="text" placeholder="请输入短信验证码" id="passwordModalCode">
+                        </div>
+                         <div class="form-group" style="padding-left: 150px;">
+                            <label for="" style="color: #000;">请输入新密码:</label>
+                            <input type="password" placeholder="请输入密码,密码长度在5-20位" id="passWord1">
+                        </div>
+                        <div class="form-group" style="padding-left: 150px;">
+                            <label for="" style="color: #000;">核 对 新 密 码:</label>
+                            <input type="password" placeholder="请再次输入密码，密码长度在5-20位" id="passWord2">
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary retrievePassword">确定</button>
+                   </div>
+                </div>
+              </div>
+        </div>
+    <!--    End modal retrievePassword
+                         ===================-->
+    <!-- Main jQuery -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Slitslider -->
+    <script src="../js/jquery.slitslider.js"></script>
+    <script src="../js/jquery.ba-cond.min.js"></script>
+    <!-- Parallax -->
+    <script src="../js/jquery.parallax-1.1.3.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="../js/jquery.mixitup.min.js"></script>
+    <!-- Custom Scrollbar -->
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <!-- Jappear js -->
+    <script src="../js/jquery.appear.js"></script>
+    <!-- Pie Chart -->
+    <script src="../js/easyPieChart.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing-1.3.pack.js"></script>
+    <!-- tweetie.min -->
+    <script src="../js/tweetie.min.js"></script>
+
+    <!-- Highlight menu item -->
+    <script src="../js/jquery.nav.js"></script>
+    <!-- Sticky Nav -->
+    <script src="../js/jquery.sticky.js"></script>
+    <!-- Number Counter Script -->
+    <script src="../js/jquery.countTo.js"></script>
+    <!-- wow.min Script -->
+    <script src="../js/wow.min.js"></script>
+    <!-- For video responsive -->
+    <script src="../js/jquery.fitvids.js"></script>
+    <!-- Grid js -->
+    <script src="../js/grid.js"></script>
+    <!-- Custom js -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
